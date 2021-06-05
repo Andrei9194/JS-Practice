@@ -97,14 +97,6 @@ menuPizza.forEach(pizza => console.log(pizza.name + ` (${pizza.ingredients}) ` +
 // }
 
 
-
-// function myFunction(a) {
-//     let pizzaName = a.name;
-//     let pizzaIngredients = a.ingredients;
-//     let piizaPrice = a.price;
-//     console.log(pizzaName + ` (${pizzaIngredients}) ` + `- ${piizaPrice}`);
-// }
-
 // 7 * .Napisz funkcję, która w przypadku kiedy jako argument otrzyma string, zwróci liczbę z tego stringa.
 // W przeciwnym przypadku niech zwróci string: 'to nie string'.
 // Input: 'Kartagina'
