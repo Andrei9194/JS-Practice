@@ -6,12 +6,19 @@
 // Input: 'aaa', -5 Output: 'argumenty to nie liczby`
 
 function maxNumber(a, b) {
-    return Math.max(a, b)
+    if (typeof(a) === "number" && typeof(b) === "number") {
+        return Math.max(a, b)
+    } else {
+        return "argumenty to nie liczby"
+    }
+
+
 }
 
 console.log(maxNumber(2, 5))
 console.log(maxNumber(2, -5))
 console.log(maxNumber("aaa", -5))
+console.log(maxNumber(2, "bb"))
 
 // 3. Napisz funkcję, która zwraca stringa z dużą pierwszą literę.
 // Input: uppercaseFirstLetter('kamil') Output: 'Kamil'
@@ -22,10 +29,10 @@ function uppercaseFirstLetter(name) {
         let mainWord = name.toLocaleLowerCase();
         let firstBigLetter = name[0].toUpperCase()
         let wholeWord = firstBigLetter + mainWord.slice(1)
-        return console.log(wholeWord)
+        return wholeWord;
 
     } else {
-        return console.log("It's not a string")
+        return "It's not a string";
     }
 
 }
@@ -55,7 +62,9 @@ console.log(uppercaseFirstLetter(12))
 //     showNonAnimals: function() { console.log(this.nonAnimals) }
 // }
 
-
+console.log(labirynth.animals[1].name);
+console.log(labirynth.animals[3].species);
+console.log(labirynth.nonAnimals[0].skills[1]);
 // 5. Napisz pętle, która iteruje od 1 do 50 i na każdej wielokrotności 3 wyświetl Fizz, na każdej wielokrotności 5 Buzz,
 //     a na wielokrotności 3 i 5 FizzBuzz.
 
